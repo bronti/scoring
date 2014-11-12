@@ -16,11 +16,3 @@ def pfound(scores, pbreak = 0.15):
     plook = calc_plook(prel, pbreak)
     summands = [plook[i] * prel[i] for i in range(len(prel))] 
     return sum(summands)
-
-def simple_test():
-    scores = [2, 3, 1, 0, 0, 2, 0, 2, 0, 1]
-    print(pfound(scores))
-
-if __name__ == "__main__":
-    simple_test()
-        
